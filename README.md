@@ -46,8 +46,10 @@ Then follow these steps:
 3. Run:
 
 ```bash
+az login
 terraform init
 terraform validate
+terraform plan -var-file="values.tfvars"
 terraform apply -var-file="values.tfvars"
 ```
 
